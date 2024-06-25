@@ -267,7 +267,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 /*Banner Css*/
 .banner {
   margin-top: 0;
-  padding: 16.25rem 0 6.25rem 0;
+  padding: 12rem 0 6.25rem 0;
   /* background-image: url('./assets/img/banner-bg.png'); */
   background-image: url('./assets/img/BG2.jpg');
   background-position: top center;
@@ -408,7 +408,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 }
 
 /*Projects Css*/
-.project {
+.project , .experience {
   padding: 5rem;
   position: relative;
   /* background-color: #111111; */
@@ -423,7 +423,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   text-align: center;
 }
 
-.project p {
+.project p , .experience p{
   color: #B8B8B8;
   font-size: 1.125em;
   letter-spacing: .8px;
@@ -563,7 +563,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 
 /*Footer Css*/
 .footer {
-  padding: 0 0 3.125rem 0;
+  padding:3.125rem 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -666,4 +666,71 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 
 .proBtn:hover{
   background-color: #cc9e4e;
+}
+
+.experience p{
+  width: auto;
+  text-align: left;
+}
+.experience h1{
+  font-size: 2.8125em;
+  font-weight: 700;
+  text-align: center;
+}
+.experience .title{
+  display: flex;
+  justify-content: space-between;
+
+}
+.experience ul li{
+    color: #B8B8B8;
+    font-size: 1.125em;
+    letter-spacing: .8px;
+    line-height: 1.5em;
+}
+.experience h4{
+    display: flex;
+    justify-content: end;
+}
+.expContainer .title::before {
+  content: "";
+    height: 20px;
+    width: 20px;
+    color: #fec86a;
+    background-color: #fec86a;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 16.8%;
+    left: 5%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px #fec86a;
+}
+.expContainer .description::before{
+  content: "";
+    height: 26.5%;
+    width: 2.5px;
+    background-color: #fbfbfb;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 31%;
+    left: 5%;
+}
+
+.expContainer , .eduContainer{
+  padding: 25px 0;
+}
+.expContainer{
+  margin-bottom: 25px;
+}
+.hrLine{
+  opacity: 1;
+  margin-bottom: 80px;
+}
+
+.buttonContainer{
+  display: flex;
+  gap: 60px;
+}
+.buttonContainer a{
+  text-decoration: none;
 }

@@ -35,7 +35,7 @@ export const Projects = () => {
       title: "Calculator",
       description: "Simple calculator",
       imgUrl: calculator,
-      prolink:"https://github.com/aniket7277/Simple-Calculator",
+      prolink:"https://aniket7277.github.io/Simple-Calculator/",
       stack: "HTML, and CSS",
     },
     {

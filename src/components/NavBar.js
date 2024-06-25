@@ -40,8 +40,10 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#abilities" className={activeLink === 'abilities' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('abilities')}>Abilities</Nav.Link>
-            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            <Nav.Link href="#skills" className={activeLink === 'abilities' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('abilities')}>Skills</Nav.Link>
+            <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            <Nav.Link href="#experience" className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experience')}>Experience</Nav.Link>
+            <Nav.Link href="#education" className={activeLink === 'education' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('education')}>Education</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
@@ -49,7 +51,7 @@ function BasicExample() {
               <a href="https://github.com/aniket7277"><img src={navIcon2} alt="GitHub" /></a>
               <a href="https://www.instagram.com/ak_a_n_i_k_e_t/"><img src={navIcon3} alt="Instagram" /></a>
             </div>
-            <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+            <button className="vvd" onClick={() => window.location = 'mailto:aniket22sept98@gmail.com'}><span>Let's Connect</span></button>
           </span>
         </Navbar.Collapse>
       </Container>

@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { ArrowDown, ArrowDownCircle, ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import Aniket from '../assets/img/Aniket.jpeg';
 import BGVIDEO from '../assets/img/BGVIDEO.mp4';
+import resume from "../assets/img/skills/Aniket-Resume-2024.pdf"
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -74,9 +75,15 @@ export const Banner = () => {
                     ever-changing business requirements within diverse
                     industries.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <div className="buttonContainer">
+                  <button onClick={() => window.location = 'mailto:aniket22sept98@gmail.com'}>
                     Let's connect <ArrowRightCircle size={25} />
                   </button>
+                  <a href={resume}>
+                  <button >
+                    Resume <ArrowDownCircle size={25} />
+                  </button></a>
+                  </div>
                 </div>
               )}
             </TrackVisibility>
